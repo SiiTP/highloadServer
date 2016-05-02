@@ -1,13 +1,9 @@
 package http;
 
-import io.netty.util.CharsetUtil;
-import org.jetbrains.annotations.Nullable;
-
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.text.ParseException;
 import java.util.HashMap;
-
 
 public class MyHttpRequest {
     public static final String QUERY_TYPE_GET = "GET";

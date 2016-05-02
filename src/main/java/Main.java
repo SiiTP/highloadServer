@@ -15,8 +15,6 @@ public class Main {
     private static final int BUF_OPTION = 32000;
 
     public static void main(String[] args) {
-        System.out.println("Running!");
-        System.out.println(System.getProperty("user.dir"));
         if (args.length == 1) {
             threadsNumber = Integer.parseInt(args[0]);
         }
@@ -25,8 +23,8 @@ public class Main {
             threadsNumber = Integer.parseInt(args[0]);
             MyHttpResponse.setRootDir(args[1]);
         }
-
-        System.out.println(threadsNumber);
+        System.out.println("Server started!");
+        System.out.println("Threads number : " + threadsNumber);
 
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup(threadsNumber);
