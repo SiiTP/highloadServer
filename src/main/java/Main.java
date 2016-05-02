@@ -25,6 +25,14 @@ public class Main {
         }
         System.out.println("Server started!");
         System.out.println("Threads number : " + threadsNumber);
+        System.out.println("=======================================");
+        System.out.println("This is resource server based on netty.");
+        System.out.println("First  parameter : count of threads");
+        System.out.println("Second parameter : source dir");
+        System.out.println("Parameters are optional");
+        System.out.println("Made by Semenchenko Ivan and Pohodnya Ivan");
+        System.out.println("IU5-3kurs, April 2016");
+        System.out.println("Supported multithreading and multiprocessing");
 
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup(threadsNumber);
